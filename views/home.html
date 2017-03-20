@@ -1,4 +1,4 @@
-<header class="menu">
+<header class="menu" ng-class="{'menu_active': menu.active}">
     <nav class="menu__content">
         <ul>
             <li>
@@ -20,14 +20,19 @@
     </nav>
 </header>
 
-<section class="home layer" data-depth="0.4" id="home">
-    <div id="particles-js"></div>
-    <div class="bg bg-blur">
-        <!--background-->
+<section class="home" id="home">
+    <div class="layer" data-depth="0.4">
+        <div id="particles-js"></div>
+        <div class="bg bg-blur">
+            <!--background-->
+        </div>
+        <img class="home__logo logo-blur" src="./img/h-logo.png" />
+        <div class="home__description">
+            <h1>Somos devs apaixodados por inovação e tecnologia</h1>
+            <p>Mestre JEDI nas horas vagas</p>
+        </div>
     </div>
-    <img class="home__logo logo-blur" src="./img/h-logo.png" />
-    <div class="home__description">
-        <h1>Somos devs apaixodados por inovação e tecnologia</h1>
-        <p>Mestre JEDI nas horas vagas</p>
-    </div>
+</section>
+<section id="about">
+    
 </section>

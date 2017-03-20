@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Abel");
 body {
   margin: 0;
-  font-family: 'Abel', sans-serif; }
+  font-family: 'Abel', sans-serif;
+  overflow-x: hidden; }
 
 #home {
   width: 100%;
@@ -62,9 +63,19 @@ body {
   opacity: 0.6;
   z-index: 1; }
 
+#about {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  position: relative;
+  z-index: 4;
+  margin-top: -2.5%; }
+
 .menu {
   position: fixed;
-  z-index: 3; }
+  z-index: 5;
+  width: 100%;
+  transition: all 0.2s ease-in-out; }
   .menu nav ul {
     padding: 5px;
     display: flex;
@@ -75,3 +86,8 @@ body {
       .menu nav ul li a {
         color: #fff;
         text-decoration: none; }
+
+.menu_active {
+  background: #000; }
+  .menu_active nav ul li {
+    color: #fe300c; }

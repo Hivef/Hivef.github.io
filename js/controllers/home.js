@@ -5,6 +5,25 @@
 angular.module('app.home', [])
 
 .controller('home.ctrl', function($scope){
+    $scope.menu = {};
+    $scope.menu.active = false;
+    // Seta se o menu está ativo ou não
+    $scope.setMenuActive = function(active){
+      if(active != $scope.menu.active){
+        $scope.menu.active = active;
+        $scope.$digest();
+      }
+    };
+    // Scroll event
+    document.addEventListener('scroll', function(event) {
+      var x = event.target.body.scrollTop;
+      if(x > 400) {
+        $scope.setMenuActive(true);
+      }else{
+        $scope.setMenuActive(false);
+      }
+    });
+
     // Particle init
     particlesJS("particles-js", {
       "particles": {
