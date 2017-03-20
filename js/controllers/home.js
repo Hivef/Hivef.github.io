@@ -8,6 +8,7 @@ angular.module('app.home', [])
 
     $scope.menu = {};
     $scope.menu.active = false;
+    $scope.activeService = 0;
     // Seta se o menu está ativo ou não
     $scope.setMenuActive = function(active){
       if(active != $scope.menu.active){
@@ -28,19 +29,32 @@ angular.module('app.home', [])
     // Tipos de serviços
     $scope.services = [
       {
+        id:1,
         name:'Web/cloud',
         icon:'ion-ios-cloud-outline',
         desc:'Controle sua empresa da sua casa, essa e outras '
       },
       {
+        id:2,
         icon:'ion-iphone',
         name:'Aplicativos on demand',
         desc:'Nossa equipe é especialista em aplicações Android e iOS, Conte sua idéia, será um prazer expandir sua marca para a era Mobile'
       },
       {
+        id:3,
         icon:'ion-ios-loop-strong',
         name:'Integrações',
         desc:'Integração entre diversos sistemas'
       }
     ];
+    
+    $scope.selectOption = function(service){
+      var id = service.id;
+      console.log(service);
+      if($scope.activeService == id){
+        $scope.activeService = 0;
+      }else{
+        $scope.activeService = id;
+      }
+    };
 })

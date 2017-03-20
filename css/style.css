@@ -101,6 +101,10 @@ body {
     width: 120px;
     z-index: 9; }
 
+.projects .projects-active {
+  background: #fe300c;
+  color: #fff; }
+
 .projects-type:hover:after {
   left: 500%;
   transition: all 2s; }

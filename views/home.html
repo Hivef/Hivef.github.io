@@ -44,7 +44,10 @@
         <div class="projects__types">
             <div class="row">
                 <div class="col-md-4" ng-repeat="service in services">
-                    <div class="projects-type">
+                    <div class="projects-type"
+                         ng-class="{'projects-active': activeService == service.id}"
+                         ng-click="selectOption(service)"
+                     >
                         <div class="projects-type-icon">
                             <span class="{{service.icon}}"></span>
                         </div>

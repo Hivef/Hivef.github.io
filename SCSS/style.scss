@@ -131,6 +131,10 @@ body{
             z-index:9;
         }
     }
+    .projects-active{
+        background:$orange;
+        color:$white;
+    }
 }
 
 .projects-type:hover{
