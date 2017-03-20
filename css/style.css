@@ -10,7 +10,7 @@ body {
   overflow: hidden; }
   #home .bg {
     width: 105%;
-    height: 105%;
+    height: 110%;
     margin: -2.5%;
     background: url("./../img/bg.jpg");
     background-repeat: no-repeat;
