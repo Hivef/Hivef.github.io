@@ -29,6 +29,22 @@ body{
     filter:blur(8px);
 }
 
+.logo-blur{
+    -webkit-filter:blur(8px);
+    filter:blur(8px);
+    animation: blur-animation .8s forwards;
+    -webkit-animation: blur-animation .8s forwards;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+}
+
+@-webkit-keyframes blur-animation {
+    100% {
+        -webkit-filter:blur(0);
+        filter:blur(0);
+    }
+}
+
 .home{
     &__logo{
         margin:25px;

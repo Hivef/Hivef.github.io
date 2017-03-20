@@ -1,5 +1,5 @@
 'use strict';
-/* global angular, WOW */
+/*  global angular, WOW */
 
 angular.module('app', [
     'ngRoute',
@@ -7,8 +7,8 @@ angular.module('app', [
 ])
 
 .run(function(){
-    // var wow = new WOW();
-    // console.log(wow);
+    var wow = new WOW();
+    console.log('wowjs intanced -> ' + wow);
 })
 
 .config(function ($routeProvider, $httpProvider) {
