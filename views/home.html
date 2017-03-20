@@ -33,6 +33,45 @@
         </div>
     </div>
 </section>
-<section id="about">
-    
+<!--<section id="about">-->
+<!--    <div class="container">-->
+        
+<!--    </div>-->
+<!--</section>-->
+<section id="projects" class="projects">
+    <div class="container">
+        <h1 class="projects-title">Qual o tipo de seu projeto?</h1>
+        <div class="projects__types">
+            <div class="row">
+                <div class="col-md-4" ng-repeat="service in services">
+                    <div class="projects-type">
+                        <div class="projects-type-icon">
+                            <span class="{{service.icon}}"></span>
+                        </div>
+                        <div class="projects-type-name">
+                            {{service.name}}
+                        </div>
+                        <div class="projects-type-description">
+                            {{service.desc}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="projects__times">
+            <div class="projects__time">
+                1 á 3 Meses
+            </div>
+            <div class="projects__time">
+                3 á 6 Meses
+            </div>
+            <div class="projects__time">
+                6 meses á 1 ano
+            </div>
+            <div class="projects__time">
+                Mais de um ano
+            </div>
+        </div>
+    </div>
 </section>

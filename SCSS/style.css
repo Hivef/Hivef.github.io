@@ -36,7 +36,6 @@ body {
   100% {
     -webkit-filter: blur(0);
     filter: blur(0); } }
-
 .home__logo {
   margin: 25px;
   width: 280px;
@@ -46,7 +45,6 @@ body {
   margin-left: -140px;
   margin-top: -80px;
   z-index: 2; }
-
 .home__description {
   width: 100%;
   position: absolute;
@@ -74,36 +72,25 @@ body {
     color: #fe300c; }
 
 .projects .projects-type {
-  border: 1px solid;
-  overflow: hidden;
-  position: relative;
   text-align: center;
-  border: solid 1px transparent;
+  border: solid 1px #fe300c;
   margin: 25px 0;
   padding: 50px;
+  transition: all .2s ease-in-out;
   color: #fe300c;
   cursor: pointer; }
-  .projects .projects-type .projects-type-name {
-    font-weight: bolder;
-    font-size: 1.6em; }
-  .projects .projects-type .projects-type-icon {
-    font-size: 4em; }
-  .projects .projects-type:after {
+  .projects .projects-type:hover {
     background: #fe300c;
-    content: "";
-    height: 200%;
-    left: -100%;
-    opacity: .1;
+    color: #fff; }
+  .projects .projects-type .projects-type-name {
+    font-size: 1.6em; }
+  .projects .projects-type:before {
     position: absolute;
-    top: -50%;
-    transform: rotate(35deg);
-    transition: all 2s;
-    width: 120px;
-    z-index: 9; }
-
-.projects-type:hover:after {
-  left: 500%;
-  transition: all 2s; }
+    content: '';
+    width: 95%;
+    height: 95%;
+    margin: 2.5%;
+    border: solid 1px #fff; }
 
 .menu {
   position: fixed;
@@ -125,3 +112,5 @@ body {
   background: #000; }
   .menu_active nav ul li {
     color: #fe300c; }
+
+/*# sourceMappingURL=style.css.map */
