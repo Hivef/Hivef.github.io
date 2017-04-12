@@ -1,8 +1,7 @@
 # HIVE
 [link](http://hive-apps.herokuapp.com/)
 ## Demo
-hive-apps.herokuapp.com
-
+[hive-apps.herokuapp.com](http://hive-apps.herokuapp.com/)
 ## libs
 - Angular
 - angular-route
